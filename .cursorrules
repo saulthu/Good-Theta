@@ -1,0 +1,19 @@
+files:
+  - include: ["plans/**/*.md", "web/**/*.ts", "web/**/*.tsx", "web/**/*.json", "web/**/*.mjs", "web/**/*.ts"]
+  - exclude: ["**/node_modules/**", "**/.next/**", "**/build/**", "**/out/**"]
+
+goals:
+  - Always read and follow plans/*.md before implementing features.
+  - Favor mobile-first UI but ensure desktop is polished.
+  - Keep PWA working offline for shell; use SWR/data caching.
+
+assistant:
+  planning:
+    - Check plans/ for updates each session.
+    - Propose diffs before large refactors.
+  coding_style:
+    - TypeScript strict mode.
+    - Tailwind + shadcn/ui components preferred.
+    - Avoid inline styles.
+
+
